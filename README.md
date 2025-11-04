@@ -1,4 +1,4 @@
-# LGU-SLAM
+# LGU-SLAM (The code for CUEMP has not been updated yet; it currently remains the LGU version. I will update it immediately once my current work is completed next two weeks.)
 
 
 <center><img src="lgu.png" width="640" height="320" style="center"></center>
