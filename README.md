@@ -39,7 +39,7 @@ python setup.py install
 ```
 
 
-## Demos
+## Demos (we provide the weight named demo.pth in the master branch, please use the cuemp branch to test it!)
 
 2. Download some sample videos using the provided script.
 ```Bash
