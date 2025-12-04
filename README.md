@@ -1,23 +1,8 @@
-# LGU-SLAM (The code for CUEMP has not been updated yet; it currently remains the LGU version. I will update it immediately once my current work is completed next two weeks.)
+#CUEMP-VO (Please check the cuemp branch.)
 
 
 <center><img src="lgu.png" width="640" height="320" style="center"></center>
 
-
-[LGU-SLAM: Learnable Gaussian Uncertainty Matching with Deformable Correlation Sampling for Deep Visual SLAM](https://arxiv.org/abs/2410.23231)  
-Yucheng Huang, Luping Ji, Hudong Liu, Mao Ye
-
-```
-@misc{huang2024lguslamlearnablegaussianuncertainty,
-      title={LGU-SLAM: Learnable Gaussian Uncertainty Matching with Deformable Correlation Sampling for Deep Visual SLAM}, 
-      author={Yucheng Huang and Luping Ji and Hudong Liu and Mao Ye},
-      year={2024},
-      eprint={2410.23231},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2410.23231}, 
-}
-```
 
 **Initial Code Release:** This repo currently provides a single GPU implementation of our monocular, stereo, and RGB-D SLAM systems. It currently contains demos, training, and evaluation scripts. 
 
@@ -25,14 +10,14 @@ Yucheng Huang, Luping Ji, Hudong Liu, Mao Ye
 ## Requirements
 
 To run the code you will need ...
-* **Inference:** ~14G(GPU MEM) when "--frontend_window" is 20. 
+* **Inference:** max 10G(GPU MEM).
 
 * **Training:** Training requires a GPU with at least 24G of memory. 
 
 ## Getting Started
 1. Clone the repo (you also need to clone [lietorch](https://github.com/princeton-vl/lietorch.git) and [eigen](https://gitlab.com/libeigen/eigen) in thirdparty)
 ```Bash
-git clone https://github.com/UESTC-nnLab/LGU-SLAM.git
+git clone https://github.com/UESTC-nnLab/CUEMP.git
 ```
 
 2. Creating a new anaconda environment using the provided .yaml file. Use `environment_novis.yaml` to if you do not want to use the visualization
@@ -47,9 +32,9 @@ pip install gdown
 python setup.py install
 ```
 
-4. Compile the LGU(learnable gaussian uncertainty + deformable sampling + low-memory deformable sampling) CUDA extensions (takes about 8 minutes)
+4. Compile the LCU(learnable correspondence uncertainty + deformable samplingg) CUDA extensions (takes about 8 minutes)
 ```Bash
-cd offersample_LGS
+cd ops_LCU
 python setup.py install
 ```
 
