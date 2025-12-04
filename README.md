@@ -1,7 +1,7 @@
 #CUEMP-VO (Please check the cuemp branch.)
 
 
-<center><img src="cuemp.png" width="640" height="320" style="center"></center>
+<center><img src="cuemp.png" width="780" height="540" style="center"></center>
 
 
 **Initial Code Release:** This repo currently provides a single GPU implementation of our monocular, stereo, and RGB-D SLAM systems. It currently contains demos, training, and evaluation scripts. 
